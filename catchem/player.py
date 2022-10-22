@@ -20,3 +20,13 @@ class Player:
     def move_left(self):
         if position > self.left:
             self.position=self.position-1
+
+    def display(self):
+        y=7
+        x=self.position%8
+
+
+    def __init__(self,limit_l, limit_r):
+        self.limit_r = limit_r
+        self.limit_l = limit_l
+        self.position = random.randint(limit_l, limit_r)
